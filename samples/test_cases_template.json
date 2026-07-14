@@ -1,0 +1,74 @@
+{
+  "title": "项目名称-测试用例",
+  "modules": [
+    {
+      "name": "模块一",
+      "groups": [
+        {
+          "name": "正常功能测试",
+          "cases": [
+            {
+              "id": "TC-001",
+              "title": "测试用例标题",
+              "precondition": "前置条件描述",
+              "steps": [
+                "步骤一：打开页面",
+                "步骤二：输入数据",
+                "步骤三：点击提交"
+              ],
+              "expected": "期望的结果描述",
+              "priority": "P0",
+              "type": "功能测试"
+            }
+          ]
+        },
+        {
+          "name": "边界值测试",
+          "cases": [
+            {
+              "id": "TC-002",
+              "title": "边界值测试标题",
+              "precondition": "前置条件",
+              "steps": ["输入最小值"],
+              "expected": "符合预期的行为",
+              "priority": "P2",
+              "type": "边界值"
+            }
+          ]
+        },
+        {
+          "name": "异常场景测试",
+          "cases": [
+            {
+              "id": "TC-003",
+              "title": "异常场景标题",
+              "steps": ["输入无效数据"],
+              "expected": "提示错误信息",
+              "priority": "P1",
+              "type": "异常场景"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "模块二",
+      "groups": [
+        {
+          "name": "接口测试",
+          "cases": [
+            {
+              "id": "TC-010",
+              "title": "GET 接口正常请求",
+              "precondition": "已登录获取 token",
+              "steps": ["构造 GET 请求", "设置请求头 Authorization", "发送请求"],
+              "expected": "返回 200 状态码，数据格式正确",
+              "priority": "P0",
+              "type": "接口测试"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

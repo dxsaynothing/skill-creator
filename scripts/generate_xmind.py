@@ -216,8 +216,7 @@ def build_manifest_xml():
 
 def serialize_xml(elem, default_ns):
     """
-    将 Element 序列化为格式化的 XML 字符串
-
+    将 Element 序列化为格式化的 XML 字符串 测试用
     Args:
         elem: ElementTree 元素
         default_ns: 此 XML 的默认命名空间 URI
